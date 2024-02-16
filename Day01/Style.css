@@ -1,0 +1,58 @@
+.box {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boxOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour,
+.minute,
+.second,
+.amPm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: #001C30;
+    margin: 10px;
+    color: aliceblue;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.boxTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singleBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 100px;
+    background: #001C30;
+    margin: 10px;
+    color: aliceblue;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.divider {
+    color: #001C30;
+    font-size: 70px;
+    font-weight: bold;
+    width: 20px;
+    height: 100px;
+}

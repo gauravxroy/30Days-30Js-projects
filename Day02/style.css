@@ -13,7 +13,7 @@ body {
 .card {
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
+    background: linear-gradient(135deg, #aa5bb9ca, #4e7da8);
     color: #fff;
     margin: 20px auto 0;
     border-radius: 20px;
@@ -86,4 +86,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+}
+
+.temp {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.city {
+    font-size: 30px;
+    font-weight: 800;
 }

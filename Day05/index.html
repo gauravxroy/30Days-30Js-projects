@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day05 </title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9c3c4f6ea6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="container">
+        <h1>Generate A <br><span>Random Password</span></h1>
+        </h1>
+        <div class="display">
+            <input type="text" id="password" placeholder="Password">
+            <i class="fa-solid fa-copy copy" onclick="copyPass()" onmouseout="outFunc()"></i>
+
+        </div>
+        <!-- can call the function  using onclick event -->
+        <!-- <button class="btn" onclick="randomPassword()"><i class="fa-solid fa-shuffle random"></i>Generate Password</button> -->
+        <!-- can call the function using addeventlistener whenever button is "clicked" -->
+        <button class="btn"><i class="fa-solid fa-shuffle random"></i>Generate Password</button>
+    </div>
     <script src="script.js"></script>
 </body>
 

@@ -7,11 +7,12 @@
 
 .container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 200vh;
     background: linear-gradient(135deg, #cf9aff, #95c0ff);
     color: #fff;
     padding-top: 4%;
     padding-left: 10%;
+    padding-right: 10%;
 }
 
 .container h1 {
@@ -44,4 +45,36 @@
     margin: 30px 0 20px;
     cursor: pointer;
     background: linear-gradient(#9418fd, #571094);
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0px;
+    outline: 0;
+    border-radius: 10px;
+    color: #333;
+
+}
+
+.delBtn {
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+
+}
+
+.copyBtn {
+    width: 22px;
+    position: absolute;
+    bottom: 15px;
+    right: 45px;
+    cursor: pointer;
+
 }

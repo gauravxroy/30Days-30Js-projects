@@ -27,12 +27,13 @@ function ageCalculator() {
 
   let yDiff = cYear - bYear;
   let mDiff = cMonth - bMonth;
+  let dDiff = cDay - bDay;
   if (bMonth > cMonth) {
     yDiff--;
     mDiff = 12 - (bMonth - cMonth);
   }
 
-  ageCal.innerText = `Your Age: ${yDiff} years And ${mDiff} Months`;
+  ageCal.innerText = `Your Age: ${yDiff} years And ${mDiff} Months ${dDiff} Days`;
 }
 
 calculate.addEventListener("click", function (e) {

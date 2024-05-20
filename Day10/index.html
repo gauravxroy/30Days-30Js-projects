@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9c3c4f6ea6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button class="error" onclick="showTost(errorMsg )">Error</button>
+            <button class="success" onclick="showTost(successMsg)">Success</button>
+            <button class="invalid" onclick="showTost(InvalidMsg)">Invalid</button>
+        </div>
+
+    </div>
+    <div id="toastBox"></div>
+
+
+    <script>
+
+        let toastBox = document.querySelector('#toastBox')
+        let successMsg = ' <i class="fa-solid fa-circle-check" ></i> Submitted Successfully';
+        let errorMsg = '<i class="fa-solid fa-bug" ></i> Something went wrong';
+        let InvalidMsg = '<i class="fa-solid fa-circle-exclamation"></i> Invalid Input';
+        function showTost(msg) {
+
+            const toastDiv = document.createElement('div');
+            toastDiv.classList.add('toast');
+            // toastDiv.innerHTML = `${msg}`;
+            toastDiv.innerHTML = msg;
+
+            toastBox.appendChild(toastDiv);
+            // toastDiv.classList.add('timeOut')
+            //understanding
+            // console.log(toastBox.innerHTML)
+            // console.log("text only: " + toastBox.innerText)
+            if (msg === "errorMsg") {
+                toastDiv.style.backgroundColor = "red";
+            }
+            // setTimeout(() => {
+            //     // toastDiv.remove();
+            //     toastBox.removeChild(toastDiv);
+
+            // }, 2000)
+
+            setTimeout(() => {
+                toastDiv.style.opacity = '0';
+                setTimeout(() => {
+                    toastBox.removeChild(toastDiv);
+                }, 500); // Match this duration with CSS transition duration
+            }, 1000);
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -6,14 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9c3c4f6ea6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
     <div class="container">
-        <div class="coverImg">
-            <img src="https://unsplash.com/photos/flatlay-photography-of-wireless-headphones-PDX_a_82obo" alt=""
-                srcset="">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="media/thumbnail.png" alt="" class="song-img">
+            <h1>Tum Hi Ho</h1>
+            <p>Arjit singh</p>
+
+            <audio controls id="song">
+                <source src="media/song.mp3 " type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div id="time">
+                <p></p>
+            </div>
+            <div class="controls">
+                <div>
+                    <i class="fa-solid fa-backward"></i>
+
+                </div>
+                <div onclick=playPause()>
+                    <i class="fa-solid fa-play" id="play-pause"></i>
+                    <!-- <i class="fa-solid fa-pause"></i> -->
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+
+            </div>
         </div>
     </div>
 
